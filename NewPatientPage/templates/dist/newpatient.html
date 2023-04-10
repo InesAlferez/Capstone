@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+        <!--This loads the static files for css and js-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>New Patient</title>
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Include script for font awesome icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/logos/newLogo.jpg" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/PatientListPage/patientlist/">Patients</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/BookingPage/booking/">Book An Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/AdminLabsPage/adminlabs/">Labs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/PrescriptionListPage/prescriptionlist/">Prescriptions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/LoginPage/login/">Logout</a></li>
+                </ul>
+                 <!--Shopping Cart-->
+                <div>
+                    <a class="fa fa-shopping-cart" href="/CartPage/cart/" aria-label="Shopping Cart"></a>
+                </div>
+                 <!--End of Shopping Cart-->
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+    <!--End of Navigation-->
+    <!--New Patient Form-->
+    <section class="page-section" id="NewPatient">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">New Patient</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Pet Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Pet's Name *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Pet's name is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Pet Type input-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Pet's Type *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Pet's type is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!--Pet Age-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Pet's Age *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Pet's age is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Pet Breed input-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Pet's Breed *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Pet's breed is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!--Address-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Address *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Address is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Additional Comments *" data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Additional Comments.</div>
+                        </div>
+                    </div>
+                </div>
+            <!--Reset Button-->
+            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="resetButton" type="reset">Reset</button></div>
+            <!-- Submit Button-->
+            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Sign Up</button></div>
+        </form>
+        </div>
+    </section>
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright &copy; Ines Alferez</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://www.twitter.com/" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
