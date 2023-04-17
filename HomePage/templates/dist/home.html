@@ -3,193 +3,174 @@
 <head>
     <meta charset="utf-8" />
         <!--This loads the static files for css and js-->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1,"/>
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Home Page</title>
-        <script src="https://cdn.jsdelivr.net/npm/less"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!--Boostrap icons-->
+        <!-- Option 1: Include in HTML -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <!-- Include script for font awesome icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        <!-- Bootstrap core CSS -->
+        <link href="/static/css/style.css/" rel="stylesheet" />
+        <link href="/static/css/bootstrap.min.css/" rel="stylesheet" />
+        <link href="/static/css/carousel.css/" rel="stylesheet" />
 </head>
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/logos/newLogo.jpg" alt="..." /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars ms-1"></i>
+    <header data-bs-theme="primary">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/HomePage/home/">VetChart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="/BookingPage/booking/">Book An Appointment</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/ServicesPage/services/">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/PharmacyPage/pharmacy/">Pharmacy</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/ProductsPage/products">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/AboutUsPage/aboutus/">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/SupportPage/support">Support</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/SignupPage/signup/">Signup/Login</a></li>
-                </ul>
-                 <!--Shopping Cart-->
-                <div>
-                    <a class="fa fa-shopping-cart" href="/CartPage/cart/" aria-label="Shopping Cart"></a>
-                </div>
-                 <!--End of Shopping Cart-->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/AboutUsPage/aboutus/">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/BookingPage/booking/">Book Appointment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/ServicesPage/services/">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/ProductsPage/products/">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/PharmacyPage/pharmacy/">Pharmacy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/SupportPage/support/">Support</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/SignupPage/signup/">SignUp</a>
+                 </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="/LoginPage/login/">Login</a>
+                  </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary" type="submit">Search</button>
+              </form>
+              <!--Cart-->
+              <div class="cart">
+                <a href="/CartPage/cart/"><i class='fas fa-shopping-cart' style='color: white'></i></a>
+              </div>
             </div>
-            <form class="d-flex">
-                <input class="form-control me-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
+          </div>
+        </nav>
+      </header>
 
+      <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/images/img2.jpg" alt="dogs in field" width="100%" height="100%">
+              <div class="container">
+                <div class="carousel-caption text-left">
+                  <h1>Welcome to VetChart.</h1>
+                  <p>Some representative placeholder content for the first slide of the carousel.</p>
+                  <p><a class="btn btn-lg btn-primary" href="/BookingPage/booking/">Book an Appointment today</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/static/images/img5.png" alt="cat jumping" width="100%" height="100%">
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>We provide great services.</h1>
+                  <p>Some representative placeholder content for the second slide of the carousel.</p>
+                  <p><a class="btn btn-lg btn-primary" href="/ServicesPagge/services/">Learn more about our services</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/static/images/img1.jpg" alt="Dog at beach" width="100%" height="100%">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Shop our Products.</h1>
+                  <p>Some representative placeholder content for the third slide of this carousel.</p>
+                  <p><a class="btn btn-lg btn-primary" href="/ProductsPage/products/">Shop Now</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-    </nav>
-    <!--End of Navigation-->
-
-            <!-- Masthead-->
-            <header class="masthead">
-                <div class="container">
-                    <div class="masthead-subheading">Welcome To The Best Vet in Town!</div>
-                    <div class="masthead-heading text-uppercase">Explore our page</div>
-                    <a class="btn btn-primary btn-xl text-uppercase" href="/ServicesPage/services/">Learn about our services!</a>
-                </div>
-            </header>
-            <!-- Services-->
-            <section class="page-section" id="services">
-                <div class="container">
-                    <div class="text-center">
-                        <h2 class="section-heading text-uppercase">Our mission</h2>
-                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-4">
-                            <span class="fa-stack fa-4x">
-                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="my-3">Shop</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <span class="fa-stack fa-4x">
-                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="my-3">Book Appointments</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About-->
-            <section class="page-section" id="about">
-                <div class="container">
-                    <div class="text-center">
-                        <h2 class="section-heading text-uppercase">Our History</h2>
-                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                    </div>
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
-                                </div>
-                                <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">Growing with the community</h4>
-                                </div>
-                                <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2015</h4>
-                                    <h4 class="subheading">Expanding the Team</h4>
-                                </div>
-                                <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2020</h4>
-                                    <h4 class="subheading">Helping the Community</h4>
-                                </div>
-                                <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>
-                                    Be Part
-                                    <br />
-                                    Of Our
-                                    <br />
-                                    Story!
-                                </h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!-- Team-->
-            <section class="page-section bg-light" id="team">
-                <div class="container">
-                    <div class="text-center">
-                        <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="team-member">
-                                <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                                <h4>Senior Vet</h4>
-                                <p class="text-muted">Jane</p>
-                                </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="team-member">
-                                <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                                <h4>Partner Vet</h4>
-                                <p class="text-muted">John</p>
-                                </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="team-member">
-                                <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                                <h4>Assistant Vet</h4>
-                                <p class="text-muted">James</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                    </div>
-                </div>
-            </section>
-            <!--Quick Links-->
+    
+    
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+    
+      <div class="container marketing">
+    
+        <!-- Three columns of text below the carousel -->
+        <div class="row text-center">
+            <h2 class="fw-normal">Welcome to VetChart</h2>
+            <h4>Some information about our clinic</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="row text-center">
+            <h2 class="fw-normal">Our Mission</h2>
+            <h4>Some information about our mission</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="row text-center">
+            <h2 class="fw-normal">Meet Our Team</h2>
+        <div class="col-lg-4">
+            <img src="/static/images/person.jpg" alt="aboutus" class="img-fluid" style="width:25%; height:25%;">
+            <h2 class="fw-normal">Heading</h2>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="/static/images/person.jpg" alt="aboutus" class="img-fluid" style="width:25%; height:25%;">
+            <h2 class="fw-normal">Heading</h2>
+            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="/static/images/person.jpg" alt="aboutus" class="img-fluid" style="width:25%; height:25%;">
+            <h2 class="fw-normal">Heading</h2>
+            <p>And lastly this, the third column of representative placeholder content.</p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->    
+      </div><!-- /.container -->
+    
+    
+<!--Quick Links-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
             <h4>Quick Links</h4>
             <ul>
                 <li><a href="/AboutUsPage/aboutus/">About Us</a></li>
                 <li><a href="/ServicesPage/services/">Services</a></li>
                 <li><a href="/BookingPage/booking/">Book An Appointment</a></li>
             </ul>
-            <!--Hours-->
-            <h4>Opening Hours</h4>
+        </div>
+    <!--Opening Hours-->
+        <div class="col-sm-4">
+        <h4>Opening Hours</h4>
             <p class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</p>
             <ul>
                 <li>Monday: 9am - 5pm</li>
@@ -200,24 +181,32 @@
                 <li>Saturday: 9am - 5pm</li>
                 <li>Sunday: Closed</li>
             </ul>
-
-            <!-- Contact-->
-            <h4>Contact Us</h4>
+        </div>
+    <!-- Contact-->
+    <div class="col-sm-4">
+        <h4>Contact Us</h4>
             <p class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</p> 
-           
-            <!-- Footer-->
-            <footer class="footer py-4">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 text-lg-start">Copyright &copy; Ines Alferez</div>
-                        <div class="col-lg-4 my-3 my-lg-0">
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.twitter.com/" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </body>
-    </html>
-    
+            <ul>
+                <li>Phone: 01234 567890</li>
+                <li>Email:VetChart@VetChart.com</li>
+                <li>Address: 123 VetChart Street, VetChart, VetChart, VetChart, VetChart</li>
+            </ul>
+        </div>
+
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright &copy; Ines Alferez</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://www.twitter.com/" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
