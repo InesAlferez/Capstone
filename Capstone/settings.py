@@ -96,9 +96,16 @@ WSGI_APPLICATION = 'Capstone.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'VetChartDB',
+        'USER': 'root',
+        'PASSWORD': 'your password',
+        'HOST': 'localhost',
+        'PORT': '3300',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
     }
+}
 }
 
 
