@@ -122,10 +122,12 @@
                                                             <li><a href="/ItemPage/item/"><i class="fas fa-expand"></i></a></li>
                                                     </ul>
                                             </div>
+                                            {%if Supplements==1: 
+                                            return = Supplements.name.,Supplements.Price, Supplements.Description1%}
                                             <div class="part-2">
-                                                    <h3 class="product-title">Bone Supplement for Dogs</h3>
-                                                    <h4 class="product-old-price">$12.99</h4>
-                                                    <h4 class="product-price">$9.99</h4>
+                                                    <h3 class="product-title">{{Supplements.name.1}}</h3>
+                                                    <h4 class="product-price">{{1}}<h4>
+                                                        <h5 class="product-fa-audio-description">{{Supplements.description}}</h5>
                                             </div>
                                     </div>
                             </div>

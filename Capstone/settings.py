@@ -97,14 +97,11 @@ WSGI_APPLICATION = 'Capstone.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'VetChartDB',
+        'NAME': 'VetChart',
         'USER': 'root',
-        'PASSWORD': 'your password',
+        'PASSWORD': 'YOUR PASSWORD',
         'HOST': 'localhost',
-        'PORT': '3300',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-    }
+        'PORT': '3306'
 }
 }
 
@@ -147,7 +144,7 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    "var/www/static/",
+    "/var/www/static/"
 ]
 
 # Default primary key field type
