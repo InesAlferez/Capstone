@@ -81,82 +81,17 @@
             </tr>
         </thead>
         <tbody>
+            {% for petlab in petlabs %}
             <tr>
-                <th scope="row">1</th>
-                <td>John Smith</td>
-                <td>1</td>
-                <td>Lab 1</td>
-                <td>304</td>
-                <td>4.5</td>
-                <td>12.5</td>
-                <td>Neutrophils: 30%</td>
-                <td>Positive</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>James Smith</td>
-                <td>2</td>
-                <td>Lab 2</td>
-                <td>303</td>
-                <td>3.5</td>
-                <td>13.5</td>
-                <td>Neutrophils: 80%</td>
-                <td>Negative</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Jane Smith</td>
-                <td>3</td>
-                <td>Lab 3</td>
-                <td>308</td>
-                <td>8.5</td>
-                <td>18.5</td>
-                <td>Neutrophils: 10%</td>
-                <td>Positive</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>Janice Smith</td>
-                <td>4</td>
-                <td>Lab 4</td>
-                <td>306</td>
-                <td>5.5</td>
-                <td>16.5</td>
-                <td>Neutrophils: 50%</td>
-                <td>Negative</td>
-            </tr>
-            <tr>
-                <th scope="row">5</th>
-                <td>John Doe</td>
-                <td>5</td>
-                <td>Lab 5</td>
-                <td>305</td>
-                <td>3.5</td>
-                <td>14.5</td>
-                <td>Neutrophils: 60%</td>
-                <td>Positive</td>
-            </tr>
-            <tr>
-                <th scope="row">6</th>
-                <td>Parker Smith</td>
-                <td>6</td>
-                <td>Lab 6</td>
-                <td>300</td>
-                <td>4.0</td>
-                <td>12.0</td>
-                <td>Neutrophils: 20%</td>
-                <td>Negative</td>
-            </tr>
-            <tr>
-                <th scope="row">7</th>
-                <td>Chad Smith</td>
-                <td>7</td>
-                <td>Lab 7</td>
-                <td>307</td>
-                <td>7.5</td>
-                <td>12.7</td>
-                <td>Neutrophils: 30%</td>
-                <td>Positive</td>
+                <td>{{petlab.petlabid}}</td>
+                <td>{{petlab.petname}}</td>
+                <td>{{petlab.employeeid}}</td>
+                <td>{{petlab.wbc}}</td>
+                <td>{{petlab.rbc}}</td>
+                <td>{{petlab.hgb}}</td>
+                <td>{{petlab.differential}}</td>
+                <td>{{petlab.status}}</td>
+                {% endfor %}
             </tr>
         </tbody>
     </table>

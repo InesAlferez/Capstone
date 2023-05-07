@@ -1,0 +1,19 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+        "Name": "python",
+        "Update": "true"
+    },
+    "Ports": [
+        {
+            "ContainerPort": "8000"
+        }
+    ],
+    "Volumes": [
+        {
+            "HostDirectory": "/var/app/current/media",
+            "ContainerDirectory": "/usr/src/app/media"
+        }
+    ],
+    "Logging": "/var/log/nginx"
+}

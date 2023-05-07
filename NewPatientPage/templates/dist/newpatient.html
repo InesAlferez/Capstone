@@ -70,69 +70,33 @@
     <!--New Patient Form-->
     <section class="page-section" id="NewPatient">
         <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">New Patient</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                <div class="row align-items-stretch mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <!-- Name input-->
-                            <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                        </div>
-                        <div class="form-group">
-                            <!-- Pet Name input-->
-                            <input class="form-control" id="name" type="text" placeholder="Your Pet's Name *" data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Pet's name is required.</div>
-                        </div>
-                        <div class="form-group">
-                            <!-- Pet Type input-->
-                            <input class="form-control" id="name" type="text" placeholder="Your Pet's Type *" data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Pet's type is required.</div>
-                        </div>
-                        <div class="form-group">
-                            <!--Pet Age-->
-                            <input class="form-control" id="name" type="text" placeholder="Your Pet's Age *" data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Pet's age is required.</div>
-                        </div>
-                        <div class="form-group">
-                            <!-- Pet Breed input-->
-                            <input class="form-control" id="name" type="text" placeholder="Your Pet's Breed *" data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Pet's breed is required.</div>
-                        </div>
-                        <div class="form-group">
-                            <!--Address-->
-                            <input class="form-control" id="name" type="text" placeholder="Your Address *" data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Address is required.</div>
-                        </div>
-                        <div class="form-group">
-                            <!-- Email address input-->
-                            <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                        </div>
-                        <div class="form-group mb-md-0">
-                            <!-- Phone number input-->
-                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-group-textarea mb-md-0">
-                            <!-- Message input-->
-                            <textarea class="form-control" id="message" placeholder="Additional Comments *" data-sb-validations="required"></textarea>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">Additional Comments.</div>
-                        </div>
-                    </div>
+          <div class="text-center">
+            <h2 class="section-heading text-uppercase">New Patient</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+          <form id="contactForm" method="POST">
+            <fieldset>
+              <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                  </div>
                 </div>
-            <!--Reset Button-->
-            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="resetButton" type="reset">Reset</button></div>
-            <!-- Submit Button-->
-            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Sign Up</button></div>
-        </form>
+              </div>
+              <!-- Reset Button-->
+              <div class="text-center">
+                <button class="btn btn-primary btn-xl text-uppercase" id="resetButton" type="reset">Reset</button>
+              </div>
+              <!-- Submit Button-->
+              <div class="text-center">
+                <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit" href='/PatientHomePage/patienthome/'>Sign Up</button>
+              </div>
+            </fieldset>
+          </form>
         </div>
-    </section>
+      </section>
+      
 <!--Quick Links-->
 <div class="container">
     <div class="row">
