@@ -26,7 +26,7 @@ SECRET_KEY = get_random_secret_key()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["Capstone-dev2.us-east-1.elasticbeanstalk.com"]
+ALLOWED_HOSTS = ["http://capstone-dev2.us-east-1.elasticbeanstalk.com/"]
 
 
 # Application definition

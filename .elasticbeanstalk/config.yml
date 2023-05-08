@@ -1,10 +1,12 @@
 branch-defaults:
-  default:
+  master:
     environment: Capstone-dev
-    group_suffix: null
+environment-defaults:
+  Capstone-dev:
+    branch: null
+    repository: null
 global:
   application_name: Capstone
-  branch: null
   default_ec2_keyname: vetchart
   default_platform: Python 3.11 running on 64bit Amazon Linux 2023
   default_region: us-east-1
@@ -13,6 +15,5 @@ global:
   platform_name: null
   platform_version: null
   profile: null
-  repository: null
-  sc: null
+  sc: git
   workspace_type: Application
