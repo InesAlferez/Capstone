@@ -70,65 +70,21 @@
         <thead>
             <tr>
                 <th scope="col">Prescription ID</th>
-                <th scope="col">Patient ID</th>
-                <th scope="col">Owner ID</th>
-                <th scope="col">Patient Name</th>
-                <th scope="col">Doctor ID</th>
-                <th scope="col">Medicine ID</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Date</th>
+                <th scope="col">Prescription Name</th>
+                <th scope="col">Owner Name</th>
+                <th scope="col">Pet Name</th>
                 <th scope="col">Status</th>
-                <th scope="col">Refills</th>
             </tr>
         </thead>
         <tbody>
+            {% for prescription in prescription_list %}
             <tr>
-                <th scope="row">1</th>
-                <td>1</td>
-                <td>1</td>
-                <td>James Otto</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>01/02/2023</td>
-                <td>Active</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>2</td>
-                <td>2</td>
-                <td>Janine Bird</td>
-                <td>2</td>
-                <td>2</td>
-                <td>2</td>
-                <td>01/02/2023</td>
-                <td>Active</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>3</td>
-                <td>3</td>
-                <td>Janice Smith</td>
-                <td>3</td>
-                <td>3</td>
-                <td>3</td>
-                <td>01/02/2023</td>
-                <td>Active</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>4</td>
-                <td>4</td>
-                <td>James Smith</td>
-                <td>4</td>
-                <td>4</td>
-                <td>4</td>
-                <td>01/02/2023</td>
-                <td>Active</td>
-                <td>4</td>
+                <td>{{prescription.prescriptionid}}</td>
+                <td>{{prescription.prescriptionname}}</td>
+                <td>{{prescription.ownername}}</td>
+                <td>{{prescription.petname}}</td>
+                <td>{{prescription.status}}</td>
+            {% endfor %}
             </tr>
         </tbody>
     </table>

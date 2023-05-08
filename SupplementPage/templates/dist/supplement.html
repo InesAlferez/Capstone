@@ -92,7 +92,7 @@
                     <div class="row justify-content-center text-center">
                             <div class="col-md-8 col-lg-6">
                                     <div class="header">
-                                            <h3>Dog Supplements</h3>
+                                            <h3>Pet Supplements</h3>
                                     </div>
                             </div>
                     </div>
@@ -112,174 +112,30 @@
                         </div>
                     </section>
                     <div class="row">
-                            <!-- Single Product -->
-                            <div class="col-md-6 col-lg-4 col-xl-3">
-                                    <div id="product-5" class="single-product">
-                                            <div class="part-1">
-                                                    <ul>
-                                                            <li><a href="/CartPage/cart/"><i class="fas fa-shopping-cart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="/ItemPage/item/"><i class="fas fa-expand"></i></a></li>
-                                                    </ul>
-                                            </div>
-                                            {%if Supplements==1: 
-                                            return = Supplements.name.,Supplements.Price, Supplements.Description1%}
-                                            <div class="part-2">
-                                                    <h3 class="product-title">{{Supplements.name.1}}</h3>
-                                                    <h4 class="product-price">{{1}}<h4>
-                                                        <h5 class="product-fa-audio-description">{{Supplements.description}}</h5>
-                                            </div>
-                                    </div>
-                            </div>
-                            <!-- Single Product -->
-                            <div class="col-md-6 col-lg-4 col-xl-3">
-                                    <div id="product-6" class="single-product">
-                                            <div class="part-1">
-                                                    <ul>
+                        <!-- Single Product-->
+                       
+                        {% for item in items %}
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-7" class="single-product">
+                                        <div class="part-1">
+                                                <ul>
                                                         <li><a href="/CartPage/cart/"><i class="fas fa-shopping-cart"></i></a></li>
                                                         <li><a href="#"><i class="fas fa-heart"></i></a></li>
                                                         <li><a href="/ItemPage/item/"><i class="fas fa-expand"></i></a></li>
-                                                    </ul>
-                                            </div>
-                                            <div class="part-2">
-                                                    <h3 class="product-title">Probiotics for Dogs</h3>
-                                                    <h4 class="product-price">$9.99</h4>
-                                            </div>
-                                    </div>
-                            </div>
-                            <!-- Single Product -->
-                            <div class="col-md-6 col-lg-4 col-xl-3">
-                                    <div id="product-7" class="single-product">
-                                            <div class="part-1">
-                                                    <ul>
-                                                        <li><a href="/CartPage/cart/"><i class="fas fa-shopping-cart"></i></a></li>
-                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                        <li><a href="/ItemPage/item/"><i class="fas fa-expand"></i></a></li>
-                                                    </ul>
-                                            </div>
-                                            <div class="part-2">
-                                                    <h3 class="product-title">Coat Supplements</h3>
-                                                    <h4 class="product-old-price">$39.99</h4>
-                                                    <h4 class="product-price">$19.99</h4>
-                                            </div>
-                                    </div>
-                            </div>
-                            <!-- Single Product -->
-                            <div class="col-md-6 col-lg-4 col-xl-3">
-                                    <div id="product-8" class="single-product">
-                                            <div class="part-1">
-                                                    <span class="new">new</span>
-                                                    <ul>
-                                                        <li><a href="/CartPage/cart/"><i class="fas fa-shopping-cart"></i></a></li>
-                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                        <li><a href="/ItemPage/item/"><i class="fas fa-expand"></i></a></li>
-                                                    </ul>
-                                            </div>
-                                            <div class="part-2">
-                                                    <h3 class="product-title">Motion Sickness Supplement for Dogs</h3>
-                                                    <h4 class="product-price">$19.99</h4>
-                                            </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-            <section class="section-products">
-                <div class="container">
-                        <div class="row justify-content-center text-center">
-                                <div class="col-md-8 col-lg-6">
-                                        <div class="header">
-                                                <h3>Cat Supplements</h3>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                                <h3 class="product-title" >{{ item.name }}</h3>
+                                                <h4 class="product-fa-description">{{ item.description }}</h4>
+                                                <h4 class="product-price">${{ item.price}}</h4>
                                         </div>
                                 </div>
                         </div>
-                        <section class="section">
-                            <div class="container">
-                                <div class="row align-align-items-center">
-                                    <div class="col-md-4 me-auto order-3">
-                                        <h1 class="section-heading">Here is Some Information About Our Cat Supplement</h1>
-                                        <p class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                            Tenetur at reprehenderit optio, laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt
-                                            dolore mollitia esse natus beatae.</p>
-                                    </div>
-                                    <div class="col-md-4 me-auto">
-                                        <img src="/static/images/supplement8.jpg" alt="aboutus" class="img-fluid" style="width: 75%; height:75%;">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="row">
-                                <!-- Single Product -->
-                                <div class="col-md-6 col-lg-4 col-xl-3">
-                                        <div id="product-5" class="single-product">
-                                                <div class="part-1">
-                                                        <ul>
-                                                                <li><a href="/CartPage/cart/"><i class="fas fa-shopping-cart"></i></a></li>
-                                                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                                <li><a href="/ItemPage/item/"><i class="fas fa-expand"></i></a></li>
-                                                        </ul>
-                                                </div>
-                                                <div class="part-2">
-                                                        <h3 class="product-title">Bone Supplement for Cats</h3>
-                                                        <h4 class="product-old-price">$12.99</h4>
-                                                        <h4 class="product-price">$9.99</h4>
-                                                </div>
-                                        </div>
-                                </div>
-                                <!-- Single Product -->
-                                <div class="col-md-6 col-lg-4 col-xl-3">
-                                        <div id="product-6" class="single-product">
-                                                <div class="part-1">
-                                                        <ul>
-                                                            <li><a href="/CartPage/cart/"><i class="fas fa-shopping-cart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="/ItemPage/item/"><i class="fas fa-expand"></i></a></li>
-                                                        </ul>
-                                                </div>
-                                                <div class="part-2">
-                                                        <h3 class="product-title">Probiotics for Cats</h3>
-                                                        <h4 class="product-price">$9.99</h4>
-                                                </div>
-                                        </div>
-                                </div>
-                                <!-- Single Product -->
-                                <div class="col-md-6 col-lg-4 col-xl-3">
-                                        <div id="product-7" class="single-product">
-                                                <div class="part-1">
-                                                        <ul>
-                                                            <li><a href="/CartPage/cart/"><i class="fas fa-shopping-cart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="/ItemPage/item/"><i class="fas fa-expand"></i></a></li>
-                                                        </ul>
-                                                </div>
-                                                <div class="part-2">
-                                                        <h3 class="product-title">Coat Supplements</h3>
-                                                        <h4 class="product-old-price">$39.99</h4>
-                                                        <h4 class="product-price">$19.99</h4>
-                                                </div>
-                                        </div>
-                                </div>
-                                <!-- Single Product -->
-                                <div class="col-md-6 col-lg-4 col-xl-3">
-                                        <div id="product-8" class="single-product">
-                                                <div class="part-1">
-                                                        <span class="new">new</span>
-                                                        <ul>
-                                                            <li><a href="/CartPage/cart/"><i class="fas fa-shopping-cart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="/ItemPage/item/"><i class="fas fa-expand"></i></a></li>
-                                                        </ul>
-                                                </div>
-                                                <div class="part-2">
-                                                        <h3 class="product-title">Motion Sickness Supplement for Cats</h3>
-                                                        <h4 class="product-price">$19.99</h4>
-                                                </div>
-                                        </div>
-                                </div>
-                            </div>
+                        {% endfor %}
                         </div>
                 </section>
         </main>
+                            
     
 <br>
 <br>
