@@ -26,11 +26,7 @@ SECRET_KEY = get_random_secret_key()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
 ALLOWED_HOSTS = ["Capstone-dev2.us-east-1.elasticbeanstalk.com"]
-=======
-ALLOWED_HOSTS = ['YOUR_AWS_EC2.compute-1.amazonaws.com']
->>>>>>> 69050664c5720430b3e260810079f478065cd752
 
 
 # Application definition
@@ -105,13 +101,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'vetchart',
         'USER': 'root',
-<<<<<<< HEAD
         'PASSWORD': 'Alejandra97!',
         'HOST': 'localhost',
-=======
-        'PASSWORD': 'YOUR_PASSWORD_HERE',
-        'HOST': 'vetchart.AWS.us-east-1.rds.amazonaws.com',
->>>>>>> 69050664c5720430b3e260810079f478065cd752
+
+
         'PORT': '3306',
 }
 }
